@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28714.193
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhoenixCharts.Server", "PhoenixCharts.Server\PhoenixCharts.Server.csproj", "{2C1F0040-D33A-4223-8135-D622A65236DD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhoenixCharts.Client", "PhoenixCharts.Client\PhoenixCharts.Client.csproj", "{C5EC8C93-A489-4582-A339-A1BCCCF7FC44}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhoenixCharts.Shared", "PhoenixCharts.Shared\PhoenixCharts.Shared.csproj", "{52161F9B-4F98-4023-B0BA-2474AB91B38D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2C1F0040-D33A-4223-8135-D622A65236DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C1F0040-D33A-4223-8135-D622A65236DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C1F0040-D33A-4223-8135-D622A65236DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C1F0040-D33A-4223-8135-D622A65236DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5EC8C93-A489-4582-A339-A1BCCCF7FC44}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5EC8C93-A489-4582-A339-A1BCCCF7FC44}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5EC8C93-A489-4582-A339-A1BCCCF7FC44}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5EC8C93-A489-4582-A339-A1BCCCF7FC44}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52161F9B-4F98-4023-B0BA-2474AB91B38D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52161F9B-4F98-4023-B0BA-2474AB91B38D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52161F9B-4F98-4023-B0BA-2474AB91B38D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52161F9B-4F98-4023-B0BA-2474AB91B38D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F18E3A2B-63C7-4E3B-9F62-8F445737ACC8}
+	EndGlobalSection
+EndGlobal

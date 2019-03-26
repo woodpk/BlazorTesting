@@ -1,0 +1,78 @@
+﻿@page "/addconsumer"
+@using PhoenixCharts.Shared.Models
+@inject HttpClient Http
+@inject Microsoft.AspNetCore.Components.Services.IUriHelper UriHelper
+@using System.Threading
+
+
+
+<h1>Create</h1>
+<h3>Consumer</h3>
+<hr />
+
+
+
+
+<div class="row">
+    <div class="col-md-4">
+        <form>
+            <div class="form-group">
+                <label for="FirstName" class="control-label">FirstName</label>
+                <input for="FirstName" class="form-control" bind=@csr.FirstName />
+            </div>
+            <div class="form-group">
+                <label for="LastName" class="control-label">LastName</label>
+                <input for="LastName" class="form-control" bind=@csr.LastName />
+            </div>
+            <div class="form-group">
+                <button type="button" class="btn btn-default" onclick=@( async () => await AddCsr() )>Save</button>
+                <button type="button" class="btn btn-default" onclick=@cancel>Cancel</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+<div><b><label class="control-label">@numberRecordsSaved</label></b></div>
+
+
+
+
+
+
+@functions {
+
+
+    //********************************************************
+    //PROPERTIES ARE HERE
+    //********************************************************
+
+    Consumer csr = new Consumer();
+    int numberRecordsSaved;
+
+
+
+
+
+    //********************************************************
+    //FUNCTIONS ARE HERE
+    //********************************************************
+
+    protected async Task AddCsr()
+    {
+        numberRecordsSaved = await Http.SendJsonAsync<int>(HttpMethod.Post, "/api/consumer/add", csr);
+
+        StateHasChanged();
+
+        UriHelper.NavigateTo("/consumer");
+    }
+
+
+
+    void cancel()
+    {
+        UriHelper.NavigateTo("/consumer");
+    }
+
+
+}

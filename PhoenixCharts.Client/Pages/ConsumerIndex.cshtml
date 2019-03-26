@@ -1,0 +1,47 @@
+﻿@page "/consumer"
+@using PhoenixCharts.Shared.Models
+@inject HttpClient Http
+
+<h1>Consumer Data</h1>
+<p>This component demonstrates fetching Consumer data from the server.</p>
+<p>
+    <a href="/addconsumer">Create New</a>
+</p>
+@if (csrList == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <table class='table'>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Functions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var csr in csrList)
+            {
+                <tr>
+                    <td>@csr.ID</td>
+                    <td>@csr.FirstName</td>
+                    <td>@csr.LastName</td>
+                    <td>
+                        <a href='/editconsumer/@csr.ID'>Edit</a>  |
+                        <a href='/delete/@csr.ID'>Delete</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+@functions {
+    Consumer[] csrList;
+    protected override async Task OnInitAsync()
+    {
+        csrList = await Http.GetJsonAsync<Consumer[]>("/api/consumer/Index");
+    }
+}

@@ -1,0 +1,141 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Patrick\\Desktop\\Coding\\BlazorTesting\\PhoenixCharts\\PhoenixCharts.Client\\PhoenixCharts.Client.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Patrick\\Desktop\\Coding\\BlazorTesting\\PhoenixCharts\\PhoenixCharts.Client\\PhoenixCharts.Client.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Patrick\\Desktop\\Coding\\BlazorTesting\\PhoenixCharts\\PhoenixCharts.Client\\PhoenixCharts.Client.csproj",
+        "projectName": "PhoenixCharts.Client",
+        "projectPath": "C:\\Users\\Patrick\\Desktop\\Coding\\BlazorTesting\\PhoenixCharts\\PhoenixCharts.Client\\PhoenixCharts.Client.csproj",
+        "packagesPath": "C:\\Users\\Patrick\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Patrick\\Desktop\\Coding\\BlazorTesting\\PhoenixCharts\\PhoenixCharts.Client\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Patrick\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://dotnet.myget.org/F/aspnetcore-dev/api/v3/index.json": {},
+          "https://dotnet.myget.org/F/blazor-dev/api/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {
+              "C:\\Users\\Patrick\\Desktop\\Coding\\BlazorTesting\\PhoenixCharts\\PhoenixCharts.Shared\\PhoenixCharts.Shared.csproj": {
+                "projectPath": "C:\\Users\\Patrick\\Desktop\\Coding\\BlazorTesting\\PhoenixCharts\\PhoenixCharts.Shared\\PhoenixCharts.Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "Microsoft.AspNetCore.Blazor": {
+              "target": "Package",
+              "version": "[0.9.0-preview3-19154-02, )"
+            },
+            "Microsoft.AspNetCore.Blazor.Build": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[0.9.0-preview3-19154-02, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "C:\\Users\\Patrick\\Desktop\\Coding\\BlazorTesting\\PhoenixCharts\\PhoenixCharts.Shared\\PhoenixCharts.Shared.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Patrick\\Desktop\\Coding\\BlazorTesting\\PhoenixCharts\\PhoenixCharts.Shared\\PhoenixCharts.Shared.csproj",
+        "projectName": "PhoenixCharts.Shared",
+        "projectPath": "C:\\Users\\Patrick\\Desktop\\Coding\\BlazorTesting\\PhoenixCharts\\PhoenixCharts.Shared\\PhoenixCharts.Shared.csproj",
+        "packagesPath": "C:\\Users\\Patrick\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Patrick\\Desktop\\Coding\\BlazorTesting\\PhoenixCharts\\PhoenixCharts.Shared\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Patrick\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://dotnetfeed.blob.core.windows.net/aspnet-aspnetcore-tooling/index.json": {},
+          "https://dotnetfeed.blob.core.windows.net/aspnet-aspnetcore/index.json": {},
+          "https://dotnetfeed.blob.core.windows.net/aspnet-entityframeworkcore/index.json": {},
+          "https://dotnetfeed.blob.core.windows.net/aspnet-extensions/index.json": {},
+          "https://dotnetfeed.blob.core.windows.net/dotnet-core/index.json": {},
+          "https://dotnetfeed.blob.core.windows.net/dotnet-windowsdesktop/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "Microsoft.AspNetCore.Blazor": {
+              "target": "Package",
+              "version": "[0.9.0-preview3-19154-02, )"
+            },
+            "Microsoft.AspNetCore.Blazor.Build": {
+              "target": "Package",
+              "version": "[0.9.0-preview3-19154-02, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}
